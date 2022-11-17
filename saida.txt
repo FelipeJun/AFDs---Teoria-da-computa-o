@@ -1,0 +1,32 @@
+Maquina AFND-e
+		O alfabeto é: ['a', 'b'];
+		Estados: ['A', 'B', 'C', 'D'];
+		Estado Inicial: A;
+		Estado Final: D;
+		As transições:['A a A', 'A b A', 'A b B', 'B ê C', 'C b D', 'D a D', 'D ê C'];
+		Quantidade de transições: 7;
+		Palavras: ['abababbababa', 'aaabaababaa', 'abb', 'abab'].
+		
+Maquina AFND
+		O alfabeto é: ['a', 'b'];
+		Estados: ['A', 'C', 'D'];
+		Estado Inicial: A;
+		Estado Final: D;
+		As transições:['A a A', 'A b A', 'A b C', 'C b D', 'C b C', 'D a D', 'D a C'];
+		Quantidade de transições: 7;
+		Palavras: ['abababbababa', 'aaabaababaa', 'abb', 'abab'].
+		
+Maquina AFD
+		O alfabeto é: ['a', 'b'];
+		Estados: ['A', 'AC', 'ACD', 'AD', 'C', 'CD', 'D'];
+		Estado Inicial: A;
+		Estado Final: ['ACD', 'AD', 'CD', 'D'];
+		As transições:['A a A', 'A b AC', 'C b DC', 'D a DC', 'AC a A', 'AC b ACD', 'AD a ACD', 'AD b AC', 'CD a CD', 'CD b CD', 'ACD a ACD', 'ACD b ACD'];
+		Quantidade de transições: 12;
+		Palavras: ['abababbababa', 'aaabaababaa', 'abb', 'abab'].
+		
+
+M aceita a palavra <abababbababa>
+M Rejeita a palavra <aaabaababaa>
+M aceita a palavra <abb>
+M Rejeita a palavra <abab>
